@@ -18,7 +18,8 @@
                 <tr>
                     <td class="auto-style1">Username</td>
                     <td>
-                        <input id="usrnam" type="text" /></td>
+                        <asp:TextBox ID="usrnam" runat="server"></asp:TextBox>
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
