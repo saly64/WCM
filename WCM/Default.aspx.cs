@@ -29,7 +29,9 @@ public partial class _Default : System.Web.UI.Page
         }
         else
         {
-            Response.Redirect("Reg.aspx");
+            Session["un"] = usrnam.Text;
+            Response.Redirect("Settings.aspx");
+
         }
     }
 }
