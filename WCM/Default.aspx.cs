@@ -16,7 +16,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void login_Click(object sender, EventArgs e)
     {
-        SqlConnection cn = new SqlConnection("server = SELMA\\SQLEXPRESS;uid=saly;pwd=1234;database=News");
+        SqlConnection cn = new SqlConnection("server =.;uid=sa;pwd=1234;database=News");
         SqlCommand cm = new SqlCommand("SELECT * FROM Users WHERE username=@username AND password = @password", cn);
         cm.Parameters.Add("@username", usrnam.Text);
         cm.Parameters.Add("@password", pwd.Text);

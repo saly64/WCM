@@ -15,7 +15,7 @@ public partial class Articles : System.Web.UI.Page
 
     protected void btnAdd_Click(object sender, EventArgs e)
     {
-        SqlConnection cn = new SqlConnection("server = SELMA\\SQLEXPRESS;uid=saly;pwd=1234;database=News");
+        SqlConnection cn = new SqlConnection("server=.;uid=sa;pwd=1234;database=News");
 //        cn.open();
         SqlCommand cm = new SqlCommand("INSERT INTO Articles(title,details,photo) values (@title,@details,@photo)", cn);
         cm.Parameters.Add("@title", txtTitle.Text);
